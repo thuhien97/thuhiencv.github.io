@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Thị Thu Hiền</title>
+    <link rel="stylesheet" href="style.css?v=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="html2canvas.js"></script>
+
+</head>
+
+<body id="cv">
+    
+    <script>
+        function printPDF() {
+            $('#printPDF').hide()
+            const element = document.getElementById('cv');
+            const opt = {
+                filename: 'Tran_Thi_Thu_Hien_QC.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            html2pdf().set(opt).from(element).save();
+            setTimeout(() => {
+                $('#printPDF').show()   
+            });
+        }
+    </script>
+    <div class="container" >
+        <div class="avatar">
+            <a title="Tải file định dạng pdf" id="printPDF" href="javascript:printPDF()">Xuất PDF</a>
+            <img src="./avatar.png" alt="">
+        </div>
+        <div class="name">
+            <h1 class="fullname">TRẦN THỊ THU HIỀN</h1>
+            <b class="">Nhân viên kiểm soát chất lượng phần mềm</b>
+            <b class="">Chuyên viên phân tích phần mềm</b>
+            <ul class="contact">
+                <li>
+                    <span>-></span> 0389586675
+                </li>
+                <li>
+                    <span>-></span> <a href="tranhien01230@gmail.com">Gmail</a>
+                </li>
+                <li>
+                    <span>-></span> <a href="https://www.facebook.com/profile.php?id=100009946802221&mibextid=LQQJ4d" target="_blank"
+                        rel="noopener noreferrer">Facebook</a>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="info">
+            <ul>
+                <li> <span>0389586675</span> </li>
+                <li>02/12/1997</li>
+                <li style="text-indent: -10px;">Xuân Canh - Xuân Phương - Nam Từ Liêm - Hà Nội</li>
+            </ul>
+        </div>
+        <div class="intro">
+            <h2>Mục tiêu nghề nghiệp</h2>
+            <ul>
+                <li>Trở thành Automation test</li>
+                <li>Có chứng chỉ Tester CSTE</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h2>Kinh nghiệm làm việc</h2>
+
+            <div class="item">
+                <div class="time">
+                    <h4><b>(7/2020 - 8/2021): JUST INFORMATION TECHNOLOGY</b></h4>
+                </div>
+                <h4>Nhân viên kiểm soát chất lượng</h4>
+                <div class="des">
+                    <ul>
+                        <li>Web: C3, TVS, CVEs, Dego</li>
+                        <li>App: Phong thủy tam nghuyên, La bàn việt</li>
+                    </ul>
+
+                </div>
+            </div>
+            <hr>
+            <div class="item">
+                <div class="time">
+                    <h4><b>(8/2021 - Đến nay): Công ty cổ phần chuyển đổi số Viet Ants</b></h4>
+                </div>
+
+                <h4>Trưởng nhóm nhân viên kiểm soát chất lượng</h4>
+                <div class="des">
+                    <ul>
+                        <li>Test lead cho dự án Kế toán,CRM</li>
+                        <li>Đảm bảo chất lượng, Demo bàn giao dự án với khách hàng</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h2 class="skills">
+                Các kỹ năng
+            </h2>
+            <ul>
+                <li>Biết cách tạo Testcase, thực hiện Test, log bug</li>
+                <li>Có hiểu biết về quy trình và kỹ thuật test</li>
+                <li>Nắm vững quy trình kiểm thử phần mềm</li>
+                <li>Biết sử dụng Postman, Swagger để test API, viết testcase API</li>
+                <li>Biết sử dụng SQL cơ bản</li>
+                <li>Có kiến thức, kinh nghiệm áp dụng các quy trình phát triển phần mềm</li>
+                <li>Năng động, sáng tạo, nhiệt tình</li>
+                <li>Chịu được áp lực cao trong công việc</li>
+                <li>Sẵn sàng làm thêm giờ khi dự án cần</li>
+                <li>Nắm bắt nghiệp vụ nhanh, tiếp nhận và xử lý thông tin tốt</li>
+                <li>Khả năng giao tiếp và làm việc nhóm tốt</li>
+            </ul>
+            <h2 class="skills">
+                Ngoại ngữ
+            </h2>
+            <ul>
+                <li>Tiếng nhật: N3</li>
+            </ul>
+
+        </div>
+        <div class="project">
+            <h2>Dự Án</h2>
+            <div class="item">
+                <h4>Website CVEs- Thư viện số</h4>
+                <div class="time">
+                    2021
+                </div>
+                <div class="location">
+                    Tester
+                </div>
+                <div class="des">
+                    CVE hoạt động 2 phân hệ độc lập: online và ofline
+                    Chức năng tự động dò quét, thu thập (Crawl) dữ liệu mới từ các nguồn trên Internet thông qua hệ
+                    thống các rô-bốt được thiết kế đặc biệt.
+                    <ul>
+                        <li>Tìm hiểu nghiệp vụ,tạo plan,viết kịch bản kiềm thử</li>
+                        <li>Thực hiện test trên hệ thống(Backend và Fronend)</li>
+                        <li>Thực hiện check API, Database</li>
+                        <li>Thực hiện log bug trên Redmine</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <h4>Website TVS- Thư viện số</h4>
+                <div class="time">
+                    2022
+                </div>
+                <div class="web"></div>
+            </div>
+            <div class="location">
+                Tester
+            </div>
+            <div class="des">
+                TVS-Thư viện số là một thư viện sửa dụng nội bộ. chứa các tài liệu của nhóm, phòng ban, tổng công ty
+                <ul>
+                    <li>Tìm hiểu nghiệp vụ, tạo plan, viết kịch bản kiềm thử</li>
+                    <li>Thực hiện test trên hệ thống(Backend và Fronend)</li>
+                    <li>Thực hiện check API, Database</li>
+                    <li>Thực hiện log bug trên Redmine</li>
+                </ul>
+            </div>
+
+
+            <div class="item">
+                <h4>Website CRM</h4>
+                <div class="time">
+                    2022-Đến nay
+                </div>
+                <div class="web">
+
+                </div>
+                <div class="location">
+                    Tester (Testlead)
+                </div>
+                <div class="des">
+                    web app: CRM Quản lý thông tin khách hàng
+                    <div> Mô tả dự án: CRM là hệ thống giúp doanh nghiệp quản lý các thông tin liên quan đến khách hàng
+                        <br>
+                        <br>
+                        <b>Công việc:</b>
+                        <ul>
+                            <li>Tìm hiểu nghiệp vụ, tạo plan, viết kịch bản kiềm thử</li>
+                        <li>Thực hiện test trên hệ thống(Backend và Fronend)</li>
+                        <li>Thực hiện check API, Database</li>
+                        <li>Thực hiện log bug trên hệ thống Jira</li>
+                            <li>Chịu trách nhiệm chính về chất lượng sản phẩm</li>
+                            <li>Review các tài liệu của tester</li>
+                            <li>Demo và nghiệm thu sản phẩm trực tiếp với phòng Quản lý chất lượng của đối tác
+                            </li>
+                            <li>Viết kịch bản kiềm thử chứa SQL, testcase API của một số chức năng (Tra cứu định mức, Phương án kinh doanh, Khách hàng hiện hữu, Cơ hội hợp đồng,...)</li>
+                        </ul>
+                        <b>Team size:</b>
+                        <ul>
+                            <li>15(3 tester)</li>
+                        </ul>
+                        <b>Công nghệ sử dụng</b>
+                        <ul>
+                            <li>Spring boot</li>
+                            <li>MySQL</li>
+                            <li>VueJs</li>
+                            <li>Microservice</li>
+                            <li>CI/CD</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
